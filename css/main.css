@@ -1,0 +1,9 @@
+.navbar-fixed-bottom, .navbar-fixed-top {
+	position: absolute;
+	top: 0;
+}
+
+.candidates .intro-text, .discussions .intro-text {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}

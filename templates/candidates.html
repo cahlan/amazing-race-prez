@@ -1,0 +1,27 @@
+<header>
+	<div class="container candidates">
+		<div class="intro-text">
+		</div>
+	</div>
+</header>
+<section>
+	<div class="col-lg-12 text-center">
+		<h2 class="section-heading">Candidates</h2>
+		<h3 class="section-subheading text-muted">Meet the "best" of what our country has to offer.</h3>
+	</div>
+	<div class="container">
+		<div ng-repeat="(key, candidate) in candidates">
+			<h4>{{candidate.name}}</h4>
+			<p>{{candidate.bio}}</p>
+			<p><a ui-sref="candidate_discussion({id:candidate.$id})" class="btn">Join the Discussion</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<h2 class="section-heading">Add Candidate</h2>
+			<input type="text" class="form-control" ng-model="name" />
+			<textarea class="form-control" ng-model="bio"></textarea>
+			<button class="btn" ng-click="addCandidate()">Add</button>
+		</div>
+	</div>
+</section>
